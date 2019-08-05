@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="container text-center p-4 " style="background: gainsboro">
+    <strong>Hi, {{ user.username }}!</strong>
+    {% for post in posts %}
+    <!--<div><p>{{ post.author.username }} : <b>{{ post.body }}</b></p></div>-->
+    {% endfor %}
+    </div>
+{% endblock %}
